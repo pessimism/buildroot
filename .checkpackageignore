@@ -265,7 +265,6 @@ configs/olimex_a64_olinuxino_defconfig lib_defconfig.ForceCheckHash
 configs/olimex_stmp157_olinuxino_lime_defconfig lib_defconfig.ForceCheckHash
 configs/olpc_xo175_defconfig lib_defconfig.ForceCheckHash
 configs/olpc_xo1_defconfig lib_defconfig.ForceCheckHash
-configs/openblocks_a6_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_lite2_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_lite_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_one_defconfig lib_defconfig.ForceCheckHash
@@ -697,10 +696,9 @@ package/fxload/0001-fix-static-build.patch lib_patch.Upstream
 package/gamin/0001-no-abstract-sockets.patch lib_patch.Upstream
 package/gamin/0002-no-const-return.patch lib_patch.Sob lib_patch.Upstream
 package/gamin/0003-fix-missing-PTHREAD_MUTEX_RECURSIVE_NP.patch lib_patch.Upstream
-package/gcc/11.4.0/0001-or1k-Add-mcmodel-option-to-handle-large-GOTs.patch lib_patch.Upstream
-package/gcc/11.4.0/0004-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/12.3.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/13.2.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
+package/gcc/14.1.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/8.4.0/0001-xtensa-fix-PR-target-91880.patch lib_patch.Upstream
 package/gcc/8.4.0/0002-Revert-re-PR-target-92095-internal-error-with-O1-mcp.patch lib_patch.Upstream
 package/gcc/8.4.0/0003-libsanitizer-Remove-cyclades-from-libsanitizer.patch lib_patch.Upstream
@@ -835,8 +833,6 @@ package/kexec-lite/0001-clean-restart.patch lib_patch.Upstream
 package/keyutils/0001-fix-install-rule.patch lib_patch.Upstream
 package/keyutils/0002-cifs.patch lib_patch.Sob lib_patch.Upstream
 package/kmod/0001-fix-O_CLOEXEC.patch lib_patch.Upstream
-package/kodi-texturepacker/0001-texturepacker.patch lib_patch.Upstream
-package/kodi-texturepacker/0002-fix-texture-packer-cmake-source-dir.patch lib_patch.Upstream
 package/kodi/S50kodi Shellcheck lib_sysv.Variables
 package/latencytop/0001-makefile.patch lib_patch.Upstream
 package/lbase64/0001-retro-compatible-with-Lua-5.1.patch lib_patch.Upstream
@@ -915,7 +911,6 @@ package/libloki/0001-allow-to-install-to-a-specific-location-using-DESTDI.patch 
 package/libloki/0002-use-ln-snf.patch lib_patch.Upstream
 package/libmad/0001-mips-h-constraint-removal.patch lib_patch.Sob lib_patch.Upstream
 package/libmad/0002-configure-ac-automake-foreign.patch lib_patch.Upstream
-package/libmanette/0001-Meson-Un-hardcode-building-a-shared-library.patch lib_patch.Upstream
 package/libmng/0001-jpeg-9a.patch lib_patch.Upstream
 package/libmodsecurity/0001-configure.ac-drop-usage-of-git-at-configure-time.patch lib_patch.Upstream
 package/libmodsecurity/0002-modsecurity.pc.in-add-lstdc.patch lib_patch.Upstream
@@ -945,8 +940,7 @@ package/libressl/0001-always-expose-SSL_OP_NO_TLSv1_3.patch lib_patch.Upstream
 package/libroxml/0001-src-roxml_mem.h-add-missing-extern.patch lib_patch.Upstream
 package/librsvg/0001-gdk-pixbuf-loader-Makefile.am-set-GDK_PIXBUF_MODULED.patch lib_patch.Upstream
 package/librtlsdr/0001-Makefile.am-respect-DESTDIR-with-install-udev-rules.patch lib_patch.Upstream
-package/libselinux/0001-fix-musl-build.patch lib_patch.Upstream
-package/libselinux/0002-Do-not-use-PYCEXT-and-rely-on-the-installed-file-nam.patch lib_patch.Upstream
+package/libselinux/0001-Do-not-use-PYCEXT-and-rely-on-the-installed-file-nam.patch lib_patch.Upstream
 package/libsepol/0001-support-static-only.patch lib_patch.Upstream
 package/libserial/0001-SerialPort.cpp-fix-build-when-size_t-is-an-unsigned-.patch lib_patch.Upstream
 package/libserial/0002-SerialPort.cpp-don-t-use-high-baudrates-when-not-ava.patch lib_patch.Upstream
@@ -1197,7 +1191,6 @@ package/olsr/0003-pud-adapt-to-API-changes-in-gpsd-3-20.patch lib_patch.Upstream
 package/olsr/0005-lib-pud-src-gpsdclient.c-drop-handling-of-gpsdata-fi.patch lib_patch.Upstream
 package/olsr/0006-build-patch-for-gpsd-3-25.patch lib_patch.Upstream
 package/olsr/S50olsr Shellcheck lib_sysv.Indent lib_sysv.Variables
-package/omxplayer/0001-Update-Makefile-to-be-compatible-with-buildroot.patch lib_patch.Upstream
 package/open-plc-utils/0001-Remove-OWNER-and-GROUPS-parameters-to-install.patch lib_patch.Upstream
 package/open2300/0001-fix-makefile.patch lib_patch.Upstream
 package/openjdk/17.0.9+9/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch lib_patch.Upstream
@@ -1323,35 +1316,29 @@ package/python-ws4py/0001-Adjust-ws4py-for-Python-3.7-syntax.patch lib_patch.Ups
 package/python3/0001-Make-the-build-of-pyc-files-conditional.patch lib_patch.Upstream
 package/python3/0002-Disable-buggy_getaddrinfo-configure-test-when-cross-.patch lib_patch.Upstream
 package/python3/0003-Add-infrastructure-to-disable-the-build-of-certain-e.patch lib_patch.Upstream
-package/python3/0004-Adjust-library-header-paths-for-cross-compilation.patch lib_patch.Upstream
-package/python3/0005-Don-t-look-in-usr-lib-termcap-for-libraries.patch lib_patch.Upstream
-package/python3/0006-Don-t-add-multiarch-paths.patch lib_patch.Upstream
-package/python3/0007-Abort-on-failed-module-build.patch lib_patch.Upstream
-package/python3/0008-Serial-ioctl-workaround.patch lib_patch.Upstream
-package/python3/0009-Do-not-adjust-the-shebang-of-Python-scripts-for-cros.patch lib_patch.Upstream
-package/python3/0010-Misc-python-config.sh.in-ensure-sed-invocations-only.patch lib_patch.Upstream
-package/python3/0011-Add-an-option-to-disable-pydoc.patch lib_patch.Upstream
-package/python3/0012-Add-an-option-to-disable-lib2to3.patch lib_patch.Upstream
-package/python3/0013-Add-option-to-disable-the-sqlite3-module.patch lib_patch.Upstream
-package/python3/0014-Add-an-option-to-disable-the-tk-module.patch lib_patch.Upstream
-package/python3/0015-Add-an-option-to-disable-the-curses-module.patch lib_patch.Upstream
-package/python3/0016-Add-an-option-to-disable-expat.patch lib_patch.Upstream
-package/python3/0017-Add-an-option-to-disable-CJK-codecs.patch lib_patch.Upstream
-package/python3/0018-Add-an-option-to-disable-NIS.patch lib_patch.Upstream
-package/python3/0019-Add-an-option-to-disable-unicodedata.patch lib_patch.Upstream
-package/python3/0020-Add-an-option-to-disable-IDLE.patch lib_patch.Upstream
-package/python3/0021-Add-an-option-to-disable-decimal.patch lib_patch.Upstream
-package/python3/0022-Add-an-option-to-disable-the-ossaudiodev-module.patch lib_patch.Upstream
-package/python3/0023-Add-an-option-to-disable-openssl-support.patch lib_patch.Upstream
-package/python3/0024-Add-an-option-to-disable-the-readline-module.patch lib_patch.Upstream
-package/python3/0025-Add-options-to-disable-zlib-bzip2-and-xz-modules.patch lib_patch.Upstream
-package/python3/0026-python-config.sh-don-t-reassign-prefix.patch lib_patch.Upstream
-package/python3/0027-Add-an-option-to-disable-uuid-module.patch lib_patch.Upstream
-package/python3/0028-fix-building-on-older-distributions.patch lib_patch.Upstream
-package/python3/0029-configure.ac-fixup-CC-print-multiarch-output-for-mus.patch lib_patch.Upstream
-package/python3/0030-Add-an-option-to-disable-the-berkeleydb-module.patch lib_patch.Upstream
-package/python3/0031-lib-crypt-uClibc-ng-doesn-t-set-errno-when-encryptio.patch lib_patch.Upstream
-package/qemu/0002-softmmu-qemu-seccomp.c-add-missing-header-for-CLONE_.patch lib_patch.Upstream
+package/python3/0004-Don-t-look-in-usr-lib-termcap-for-libraries.patch lib_patch.Upstream
+package/python3/0005-Don-t-add-multiarch-paths.patch lib_patch.Upstream
+package/python3/0006-Abort-on-failed-module-build.patch lib_patch.Upstream
+package/python3/0007-Serial-ioctl-workaround.patch lib_patch.Upstream
+package/python3/0008-Add-an-option-to-disable-pydoc.patch lib_patch.Upstream
+package/python3/0009-Add-an-option-to-disable-lib2to3.patch lib_patch.Upstream
+package/python3/0010-Add-option-to-disable-the-sqlite3-module.patch lib_patch.Upstream
+package/python3/0011-Add-an-option-to-disable-the-tk-module.patch lib_patch.Upstream
+package/python3/0012-Add-an-option-to-disable-the-curses-module.patch lib_patch.Upstream
+package/python3/0013-Add-an-option-to-disable-expat.patch lib_patch.Upstream
+package/python3/0014-Add-an-option-to-disable-CJK-codecs.patch lib_patch.Upstream
+package/python3/0015-Add-an-option-to-disable-NIS.patch lib_patch.Upstream
+package/python3/0016-Add-an-option-to-disable-unicodedata.patch lib_patch.Upstream
+package/python3/0017-Add-an-option-to-disable-IDLE.patch lib_patch.Upstream
+package/python3/0018-Add-an-option-to-disable-decimal.patch lib_patch.Upstream
+package/python3/0019-Add-an-option-to-disable-the-ossaudiodev-module.patch lib_patch.Upstream
+package/python3/0020-Add-an-option-to-disable-openssl-support.patch lib_patch.Upstream
+package/python3/0021-Add-an-option-to-disable-the-readline-module.patch lib_patch.Upstream
+package/python3/0022-Add-options-to-disable-zlib-bzip2-and-xz-modules.patch lib_patch.Upstream
+package/python3/0023-Add-an-option-to-disable-uuid-module.patch lib_patch.Upstream
+package/python3/0024-configure.ac-fixup-CC-print-multiarch-output-for-mus.patch lib_patch.Upstream
+package/python3/0025-Add-an-option-to-disable-the-berkeleydb-module.patch lib_patch.Upstream
+package/python3/0026-lib-crypt-uClibc-ng-doesn-t-set-errno-when-encryptio.patch lib_patch.Upstream
 package/qextserialport/0001-Create-a-main-include-file-QExtSerialPort.patch lib_patch.Upstream
 package/qextserialport/0002-Tell-qmake-to-add-a-pkgconfig-file-to-ease-usage-wit.patch lib_patch.Upstream
 package/qt5/qt5base/0001-qtbase-Fix-build-error-when-using-EGL.patch lib_patch.Upstream
