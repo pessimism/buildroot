@@ -122,6 +122,7 @@ F:	package/libest/
 
 N:	Alexander Mukhin <alexander.i.mukhin@gmail.com>
 F:	package/tinyproxy/
+F:	package/zfs/
 
 N:	Alexander Sverdlin <alexander.sverdlin@gmail.com>
 F:	package/mini-snmpd/
@@ -544,6 +545,7 @@ F:	configs/ls1046a-frwy_defconfig
 F:	package/bats-assert/
 F:	package/bats-file/
 F:	package/bats-support/
+F:	package/mtd/
 F:	package/python-pysensors/
 F:	package/qoriq-fm-ucode/
 F:	package/unifdef/
@@ -615,9 +617,6 @@ F:	package/docker-engine/
 F:	package/embiggen-disk/
 F:	package/fuse-overlayfs/
 F:	package/go/
-F:	package/go-bootstrap-stage1/
-F:	package/go-bootstrap-stage2/
-F:	package/go-bootstrap-stage3/
 F:	package/gocryptfs/
 F:	package/mbpfan/
 F:	package/moby-buildkit/
@@ -1519,7 +1518,9 @@ N:	Jared Bents <jared.bents@rockwellcollins.com>
 F:	package/libvirt/
 
 N:	Jarkko Sakkinen <jarkko@kernel.org>
+F:	package/libtpms/
 F:	package/quota/
+F:	package/swtpm/
 
 N:	Jason Pruitt <jrspruitt@gmail.com>
 F:	package/librtlsdr/
@@ -1948,8 +1949,8 @@ F:	package/libcamera/
 N:	Kilian Zinnecker <kilian.zinnecker@mail.de>
 F:	board/avnet/rzboard_v2l/
 F:	board/radxa/rock5b/
-F:	configs/rock5b_defconfig
 F:	configs/avnet_rzboard_v2l_defconfig
+F:	configs/rock5b_defconfig
 F:	package/rockchip-rkbin/
 
 N:	Klaus Heinrich Kiwi <klaus@linux.vnet.ibm.com>
@@ -2335,8 +2336,10 @@ F:	package/qt5/qt5opcua/
 
 N:	Neal Frager <neal.frager@amd.com>
 F:	board/versal/
+F:	board/xilinx/
 F:	board/zynq/
 F:	board/zynqmp/
+F:	boot/xilinx-prebuilt/
 F:	configs/versal_vck190_defconfig
 F:	configs/zynq_zc702_defconfig
 F:	configs/zynq_zc706_defconfig
@@ -2350,7 +2353,6 @@ F:	package/binutils-bare-metal/
 F:	package/bootgen/
 F:	package/gcc-bare-metal/
 F:	package/newlib-bare-metal/
-F:	package/versal-firmware/
 F:	toolchain/toolchain-bare-metal-buildroot/
 
 N:	Nicola Di Lieto <nicola.dilieto@gmail.com>
@@ -3030,6 +3032,9 @@ F:	package/frotz/
 F:	package/kvm-unit-tests/
 F:	package/xorcurses/
 
+N:	Thomas Perale <thomas.perale@mind.be>
+F:	package/go/
+
 N:	Thomas Petazzoni <thomas.petazzoni@bootlin.com>
 F:	arch/Config.in.arm
 F:	board/beaglev/
@@ -3340,6 +3345,7 @@ F:	package/libxmlb/
 F:	package/linux-firmware/
 F:	package/linux-serial-test/
 F:	package/modem-manager/
+F:	package/ncftp/
 F:	package/nftables/
 F:	package/nuttcp/
 F:	package/parted/

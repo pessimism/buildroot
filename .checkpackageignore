@@ -96,11 +96,6 @@ board/toradex/apalis-imx6/post-image.sh Shellcheck
 board/udoo/common/post-build.sh Shellcheck
 board/udoo/mx6qdl/patches/linux/0000-udoo-disable-usbh1.patch lib_patch.Upstream
 boot/afboot-stm32/0003-Makefile-disable-stack-protector.patch lib_patch.Upstream
-boot/at91bootstrap/0001-eabi-fix.patch lib_patch.Upstream
-boot/at91bootstrap/0002-gcc-4.6.x-ldscript-fix.patch lib_patch.Upstream
-boot/at91bootstrap/0003-u-boot-relocation-fix.patch lib_patch.Upstream
-boot/at91dataflashboot/0001-do-not-install.patch lib_patch.Upstream
-boot/at91dataflashboot/0002-eabi-fixes.patch lib_patch.Upstream
 boot/optee-os/3.13.0/0001-core-zlib-fix-build-warning-when-_LFS64_LARGEFILE-is.patch lib_patch.Upstream
 boot/syslinux/0001-bios-Fix-alignment-change-with-gcc-5.patch lib_patch.Upstream
 boot/syslinux/0002-Disable-PIE-to-avoid-FTBFS-on-amd64.patch lib_patch.Upstream
@@ -117,10 +112,6 @@ boot/syslinux/0014-Fix-build-with-binutils-note-gnu-property-section.patch lib_p
 boot/syslinux/0016-Workaround-multiple-definition-of-symbol-errors.patch lib_patch.Upstream
 boot/syslinux/0017-Replace-builtin-strlen-that-appears-to-get-optimized.patch lib_patch.Upstream
 configs/aarch64_efi_defconfig lib_defconfig.ForceCheckHash
-configs/acmesystems_aria_g25_128mb_defconfig lib_defconfig.ForceCheckHash
-configs/acmesystems_aria_g25_256mb_defconfig lib_defconfig.ForceCheckHash
-configs/acmesystems_arietta_g25_128mb_defconfig lib_defconfig.ForceCheckHash
-configs/acmesystems_arietta_g25_256mb_defconfig lib_defconfig.ForceCheckHash
 configs/am574x_idk_defconfig lib_defconfig.ForceCheckHash
 configs/andes_ae350_45_defconfig lib_defconfig.ForceCheckHash
 configs/arcturus_ucls1012a_defconfig lib_defconfig.ForceCheckHash
@@ -134,10 +125,6 @@ configs/at91sam9260eknf_defconfig lib_defconfig.ForceCheckHash
 configs/at91sam9g20dfc_defconfig lib_defconfig.ForceCheckHash
 configs/at91sam9g45m10ek_defconfig lib_defconfig.ForceCheckHash
 configs/at91sam9rlek_defconfig lib_defconfig.ForceCheckHash
-configs/at91sam9x5ek_defconfig lib_defconfig.ForceCheckHash
-configs/at91sam9x5ek_dev_defconfig lib_defconfig.ForceCheckHash
-configs/at91sam9x5ek_mmc_defconfig lib_defconfig.ForceCheckHash
-configs/at91sam9x5ek_mmc_dev_defconfig lib_defconfig.ForceCheckHash
 configs/atmel_sama5d27_som1_ek_mmc_dev_defconfig lib_defconfig.ForceCheckHash
 configs/atmel_sama5d2_xplained_mmc_defconfig lib_defconfig.ForceCheckHash
 configs/atmel_sama5d2_xplained_mmc_dev_defconfig lib_defconfig.ForceCheckHash
@@ -158,7 +145,6 @@ configs/bananapi_m2_zero_defconfig lib_defconfig.ForceCheckHash
 configs/bananapro_defconfig lib_defconfig.ForceCheckHash
 configs/beagleboardx15_defconfig lib_defconfig.ForceCheckHash
 configs/beaglebone_defconfig lib_defconfig.ForceCheckHash
-configs/beaglebone_qt5_defconfig lib_defconfig.ForceCheckHash
 configs/beaglev_defconfig lib_defconfig.ForceCheckHash
 configs/beelink_gs1_defconfig lib_defconfig.ForceCheckHash
 configs/broadcom_northstar_defconfig lib_defconfig.ForceCheckHash
@@ -209,8 +195,6 @@ configs/imx6ullevk_defconfig lib_defconfig.ForceCheckHash
 configs/imx6ulpico_defconfig lib_defconfig.ForceCheckHash
 configs/imx7d-sdb_defconfig lib_defconfig.ForceCheckHash
 configs/imx7dpico_defconfig lib_defconfig.ForceCheckHash
-configs/imx8mn_bsh_smm_s2_defconfig lib_defconfig.ForceCheckHash
-configs/imx8mn_bsh_smm_s2_pro_defconfig lib_defconfig.ForceCheckHash
 configs/imx8mpico_defconfig lib_defconfig.ForceCheckHash
 configs/imx8mqevk_defconfig lib_defconfig.ForceCheckHash
 configs/imxrt1050-evk_defconfig lib_defconfig.ForceCheckHash
@@ -218,9 +202,7 @@ configs/khadas_vim3_defconfig lib_defconfig.ForceCheckHash
 configs/kontron_bl_imx8mm_defconfig lib_defconfig.ForceCheckHash
 configs/kontron_pitx_imx8m_defconfig lib_defconfig.ForceCheckHash
 configs/kontron_smarc_sal28_defconfig lib_defconfig.ForceCheckHash
-configs/lego_ev3_defconfig lib_defconfig.ForceCheckHash
 configs/linksprite_pcduino_defconfig lib_defconfig.ForceCheckHash
-configs/ls1028ardb_defconfig lib_defconfig.ForceCheckHash
 configs/ls1046a-frwy_defconfig lib_defconfig.ForceCheckHash
 configs/mangopi_mq1rdw2_defconfig lib_defconfig.ForceCheckHash
 configs/mender_x86_64_efi_defconfig lib_defconfig.ForceCheckHash
@@ -235,9 +217,7 @@ configs/microchip_sama7g5ek_mmc_defconfig lib_defconfig.ForceCheckHash
 configs/microchip_sama7g5ek_mmc_dev_defconfig lib_defconfig.ForceCheckHash
 configs/minnowboard_max_defconfig lib_defconfig.ForceCheckHash
 configs/mx25pdk_defconfig lib_defconfig.ForceCheckHash
-configs/mx51evk_defconfig lib_defconfig.ForceCheckHash
 configs/mx53loco_defconfig lib_defconfig.ForceCheckHash
-configs/mx6cubox_defconfig lib_defconfig.ForceCheckHash
 configs/mx6sx_udoo_neo_defconfig lib_defconfig.ForceCheckHash
 configs/mx6udoo_defconfig lib_defconfig.ForceCheckHash
 configs/nexbox_a95x_defconfig lib_defconfig.ForceCheckHash
@@ -259,7 +239,6 @@ configs/olimex_a20_olinuxino_lime_defconfig lib_defconfig.ForceCheckHash
 configs/olimex_a20_olinuxino_micro_defconfig lib_defconfig.ForceCheckHash
 configs/olimex_a33_olinuxino_defconfig lib_defconfig.ForceCheckHash
 configs/olimex_a64_olinuxino_defconfig lib_defconfig.ForceCheckHash
-configs/olimex_stmp157_olinuxino_lime_defconfig lib_defconfig.ForceCheckHash
 configs/olpc_xo175_defconfig lib_defconfig.ForceCheckHash
 configs/olpc_xo1_defconfig lib_defconfig.ForceCheckHash
 configs/orangepi_lite2_defconfig lib_defconfig.ForceCheckHash
@@ -322,18 +301,6 @@ configs/qemu_x86_64_defconfig lib_defconfig.ForceCheckHash
 configs/qemu_x86_defconfig lib_defconfig.ForceCheckHash
 configs/qemu_xtensa_lx60_defconfig lib_defconfig.ForceCheckHash
 configs/qemu_xtensa_lx60_nommu_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi0_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi0w_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi2_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi3_64_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi3_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi3_qt5we_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi4_64_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi4_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypi_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypicm4io_64_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypicm4io_defconfig lib_defconfig.ForceCheckHash
-configs/raspberrypizero2w_defconfig lib_defconfig.ForceCheckHash
 configs/riotboard_defconfig lib_defconfig.ForceCheckHash
 configs/roc_pc_rk3399_defconfig lib_defconfig.ForceCheckHash
 configs/rock64_defconfig lib_defconfig.ForceCheckHash
@@ -363,10 +330,8 @@ configs/solidrun_clearfog_defconfig lib_defconfig.ForceCheckHash
 configs/solidrun_clearfog_gt_8k_defconfig lib_defconfig.ForceCheckHash
 configs/solidrun_macchiatobin_defconfig lib_defconfig.ForceCheckHash
 configs/spike_riscv64_defconfig lib_defconfig.ForceCheckHash
-configs/stm32f429_disco_xip_defconfig lib_defconfig.ForceCheckHash
 configs/stm32f469_disco_sd_defconfig lib_defconfig.ForceCheckHash
 configs/stm32f469_disco_xip_defconfig lib_defconfig.ForceCheckHash
-configs/stm32f769_disco_sd_defconfig lib_defconfig.ForceCheckHash
 configs/stm32mp157a_dk1_defconfig lib_defconfig.ForceCheckHash
 configs/stm32mp157c_dk2_defconfig lib_defconfig.ForceCheckHash
 configs/stm32mp157c_odyssey_defconfig lib_defconfig.ForceCheckHash
@@ -376,20 +341,10 @@ configs/ts4900_defconfig lib_defconfig.ForceCheckHash
 configs/ts5500_defconfig lib_defconfig.ForceCheckHash
 configs/ts7680_defconfig lib_defconfig.ForceCheckHash
 configs/uevm5432_defconfig lib_defconfig.ForceCheckHash
-configs/versal_vck190_defconfig lib_defconfig.ForceCheckHash
 configs/visionfive_defconfig lib_defconfig.ForceCheckHash
 configs/wandboard_defconfig lib_defconfig.ForceCheckHash
 configs/warp7_defconfig lib_defconfig.ForceCheckHash
-configs/zynq_microzed_defconfig lib_defconfig.ForceCheckHash
-configs/zynq_zc702_defconfig lib_defconfig.ForceCheckHash
-configs/zynq_zc706_defconfig lib_defconfig.ForceCheckHash
-configs/zynq_zed_defconfig lib_defconfig.ForceCheckHash
 configs/zynqmp_kria_kd240_defconfig lib_defconfig.ForceCheckHash
-configs/zynqmp_kria_kr260_defconfig lib_defconfig.ForceCheckHash
-configs/zynqmp_kria_kv260_defconfig lib_defconfig.ForceCheckHash
-configs/zynqmp_zcu102_defconfig lib_defconfig.ForceCheckHash
-configs/zynqmp_zcu104_defconfig lib_defconfig.ForceCheckHash
-configs/zynqmp_zcu106_defconfig lib_defconfig.ForceCheckHash
 linux/5.10.162-cip24-rt10/0001-arch-microblaze-mm-init.c-fix-build.patch lib_patch.Upstream
 package/18xx-ti-utils/0001-plt.h-fix-build-with-gcc-10.patch lib_patch.Upstream
 package/4th/0001-avoid-regen-during-install.patch lib_patch.Upstream
@@ -555,7 +510,6 @@ package/dhcp/S80dhcp-relay Shellcheck lib_sysv.Variables
 package/dhcp/S80dhcp-server Shellcheck lib_sysv.Variables
 package/dhcp/dhclient-script Shellcheck lib_shellscript.TrailingSpace
 package/dhcpcd/S41dhcpcd lib_sysv.Indent lib_sysv.Variables
-package/dhcpdump/0001-use-non-bsd-structures.patch lib_patch.Upstream
 package/dhrystone/0001-cmdline-nruns.patch lib_patch.Sob lib_patch.Upstream
 package/dhrystone/0002-HZ.patch lib_patch.Sob lib_patch.Upstream
 package/dhrystone/0003-exit.patch lib_patch.Sob lib_patch.Upstream
@@ -578,7 +532,6 @@ package/dmalloc/0004-Makefile-use-the-configure-detected-or-user-supplied.patch 
 package/dmalloc/0005-configure-use-LD-instead-of-hard-coding-ld.patch lib_patch.Upstream
 package/dmraid/0001-fix-compilation-under-musl.patch lib_patch.Upstream
 package/dmraid/S20dmraid lib_sysv.Variables
-package/dnsmasq/S80dnsmasq Shellcheck
 package/docker-engine/S60dockerd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/docopt-cpp/0001-only-build-one-target-use-BUILD_SHARED_LIBS-where-appropriate.patch lib_patch.Upstream
 package/domoticz/S99domoticz Shellcheck
@@ -692,7 +645,7 @@ package/gamin/0001-no-abstract-sockets.patch lib_patch.Upstream
 package/gamin/0002-no-const-return.patch lib_patch.Sob lib_patch.Upstream
 package/gamin/0003-fix-missing-PTHREAD_MUTEX_RECURSIVE_NP.patch lib_patch.Upstream
 package/gcc/12.3.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
-package/gcc/13.2.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
+package/gcc/13.3.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/14.1.0/0001-disable-split-stack-for-non-thread-builds.patch lib_patch.Upstream
 package/gcc/8.4.0/0001-xtensa-fix-PR-target-91880.patch lib_patch.Upstream
 package/gcc/8.4.0/0002-Revert-re-PR-target-92095-internal-error-with-O1-mcp.patch lib_patch.Upstream
@@ -738,7 +691,7 @@ package/glorytun/0002-aegis256.c-fix-aarch64-build-with-uclibc.patch lib_patch.U
 package/gnu-efi/0001-Make.defaults-don-t-override-ARCH-when-cross-compili.patch lib_patch.Upstream
 package/gnupg/0001-build-Always-use-EXTERN_UNLESS_MAIN_MODULE-pattern.patch lib_patch.Upstream
 package/gnuplot/0001-configure-add-without-demo-option.patch lib_patch.Upstream
-package/go/0001-build.go-explicit-option-for-crosscompilation.patch lib_patch.Upstream
+package/go/go-src/0001-build.go-explicit-option-for-crosscompilation.patch lib_patch.Upstream
 package/gob2/0001-dont-include-from-prefix.patch lib_patch.Upstream
 package/gobject-introspection/0001-disable-tests.patch lib_patch.Upstream
 package/gobject-introspection/0002-Add-rpath-links-to-ccompiler.patch lib_patch.Upstream
@@ -1109,7 +1062,6 @@ package/musl/0001-avoid-kernel-if_ether.h.patch lib_patch.Upstream
 package/musl/0002-package-musl-Make-scheduler-functions-Linux-compatib.patch lib_patch.Upstream
 package/nano/0001-lib-getrandom.c-fix-build-with-uclibc-1.0.35.patch lib_patch.Upstream
 package/nanocom/0001-fix-build-with-gcc-10.patch lib_patch.Upstream
-package/ncftp/0001-fix-gcc-10.patch lib_patch.Upstream
 package/ncmpc/0001-meson.build-add-atomic-dependency-for-sparc.patch lib_patch.Upstream
 package/ne10/0001-CMakeLists-don-t-hard-code-thumb-code-generation.patch lib_patch.Upstream
 package/ne10/0002-fix-build-without-C.patch lib_patch.Upstream
@@ -1402,7 +1354,6 @@ package/rubix/0002-misc-fixes.patch lib_patch.Sob lib_patch.Upstream
 package/rygel/0001-meson.build-fix-g_ir_compiler-calls.patch lib_patch.Upstream
 package/rygel/S99rygel Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/s6-linux-init/0001-configure-add-D_GNU_SOURCE.patch lib_patch.Upstream
-package/s6-linux-utils/0001-src-s6-linux-utils-rngseed.c-fix-build-with-glibc.patch lib_patch.Upstream
 package/safeclib/0001-fix-armv7-asm-inline-error-GH-115.patch lib_patch.Upstream
 package/samba4/0001-libreplace-disable-libbsd-support.patch lib_patch.Upstream
 package/samba4/0002-build-find-pre-built-heimdal-build-tools-in-case-of-.patch lib_patch.Upstream
@@ -1514,7 +1465,6 @@ package/tinyalsa/0001-include-time.h-before-asound.h.patch lib_patch.Upstream
 package/tinycbor/0001-Makefile-add-DISABLE_WERROR.patch lib_patch.Upstream
 package/tinycompress/0001-wave-add-time.h-missing-header-inclusion.patch lib_patch.Upstream
 package/tinydtls/0001-sha2-sha2.c-fix-build-on-big-endian.patch lib_patch.Upstream
-package/tinyproxy/0001-prevent-junk-from-showing-up-in-error-page-in-invalid-requests.patch lib_patch.Upstream
 package/tinyxml/0001-In-stamp-always-advance-the-pointer-if-p-0xef.patch lib_patch.Upstream
 package/tpm2-abrmd/S80tpm2-abrmd Shellcheck lib_sysv.Indent lib_sysv.Variables
 package/tpm2-tss/0001-Temporary-fix-for-build-without-C.patch lib_patch.Upstream
@@ -1689,7 +1639,6 @@ support/dependencies/check-host-xzcat.sh Shellcheck
 support/dependencies/dependencies.sh Shellcheck
 support/download/bzr Shellcheck lib_shellscript.ConsecutiveEmptyLines
 support/download/cargo-post-process Shellcheck
-support/download/cvs Shellcheck
 support/download/dl-wrapper Shellcheck
 support/download/file Shellcheck
 support/download/go-post-process Shellcheck
